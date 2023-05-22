@@ -1,11 +1,12 @@
 local caligo = {
-    name = 'example',
-    description = 'this is an example cmd',
-    execute = function(plr, args)
-        print(plr, ' executed a command with args: ', args)
-    end,
-    permissions = 100
-    aliases = nil
+    data = {
+        name = "test",
+        description = "a test command."
+        permissions = 0, --users with admin permissions this or above can use this command
+    },
+    function execute(args, user)
+        print(user,' ran the test cmd')
+    end
 }
 
 return caligo
