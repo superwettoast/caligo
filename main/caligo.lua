@@ -1,11 +1,29 @@
-local caligo = {
-    name = 'example',
-    description = 'this is an example cmd',
-    execute = function(plr, args)
-        print(plr, ' executed a command with args: ', args)
-    end,
-    permissions = 100
-    aliases = nil
+--script
+local config = {
+    prefix = "?"
 }
 
-return caligo
+local command_folder = game.ServerStorage.caligo.commands
+
+local commands = {}
+
+for _,cmd in pairs(command_folder.GetChildren()) do
+    if cmd:IsA('ModuleScript') then
+        local workingCmd = require(cmd)
+        if workingCmd.data and workingCmd.execute then
+            table.insert(commands, cmd.data)
+        end
+    end
+end
+
+--command handler thing idk
+game.Players.PlayerAdded:Connect(function(plr)
+    player.Chatted:Connect(function(msg)
+        local args = msg.split(' ')
+        if table.find(commands, args[1]) then
+        local data = table.find(commands,  args[1])
+        local newArgs = table.remove(args[1])
+        pcall(data.execute, newArgs)
+        end
+    end)    
+end)
