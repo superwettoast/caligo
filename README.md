@@ -7,7 +7,7 @@ Caligo is a semi-maintained advanced administration tool for Roblox,
 * Simple admin handler
 
 ## How To Use
-**Step 1. **
+**Step 1.**
 > Insert the model to your roblox game.
  
 **Step 2.**
