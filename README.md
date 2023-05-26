@@ -3,6 +3,7 @@ Caligo is a semi-maintained advanced administration tool for Roblox,
 
 ## Features
 * Easy to use
+* Features for advanced users.
 * Little to no setup required
 * Simple admin handler
 
