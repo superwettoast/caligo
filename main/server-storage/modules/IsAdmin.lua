@@ -7,11 +7,11 @@ local isAdmin = {
         admim = [500],
         moderator = [300],
         trial-mod = [200],
-    }
+    },
     admins = {
         ["123"] = {
-            name = "name",
-            level = [200],
+            name = "example",
+            level = isAdmin.admin-ranks.moderator,
         }
     },
     check = function(plr)
