@@ -23,7 +23,7 @@ game.Players.PlayerAdded:Connect(function(plr)
         if table.find(commands, args[1]) then
         local data = table.find(commands,  args[1])
         local newArgs = table.remove(args[1])
-        pcall(data.execute, newArgs)
+        pcall(data.execute, newArgs, plr)
         end
     end)    
 end)
