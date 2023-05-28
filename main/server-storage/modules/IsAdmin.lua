@@ -30,6 +30,7 @@ local isAdmin = {
                 level = rank
             }
         }
+        --ill add datastore later
         table.insert(adminThing)
     end
 }
