@@ -1,6 +1,6 @@
 --script
 local config = {
-    prefix = "?"
+    prefix = "?" --this don't work rn cuz im lazy
 }
 
 local command_folder = game.ServerStorage.caligo.commands
