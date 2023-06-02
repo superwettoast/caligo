@@ -1,4 +1,6 @@
-
-.gitattributes
-aftman.toml
+/caligo.rbxlx
+/*.rbxlx.lock
+/*.rbxl.lock
 default.project.json
+aftman.toml
+main/ServerStorage/CALIGO/GUI/init.meta.json
