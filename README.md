@@ -15,7 +15,7 @@ Caligo is a semi-maintained advanced administration tool for Roblox,
 > Move contents of the folders to their respective folders. (ServerScriptStorage, Etc.)
 
 **Step 3.**
-> Add yourself to the IsAdmin module config table. (and remove me if you want)
+> Add yourself to the admins table in the CALIGO_MAIN script (ServerScriptService >CALIGO >CALIGO_MAIN)
 
 **Step 4.**
 > Tweak commands and add your own!
